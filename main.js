@@ -1,7 +1,7 @@
 noseX=0;
 noseY=0;
 function preload(){
-face=loadImage("https://www.freeiconspng.com/thumbs/mustache-png/mustache-png-d-by-anlli3-on-deviantart-2.png");
+face=loadImage('Mustache.png');
 }
 function setup(){
 canvas= createCanvas(300, 300);
