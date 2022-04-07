@@ -1,7 +1,7 @@
 noseX=0;
 noseY=0;
 function preload(){
-face=loadImage('Mustache.png');
+face=loadImage('https://i.postimg.cc/PLhwHhxS/Mustache.png');
 }
 function setup(){
 canvas= createCanvas(300, 300);
@@ -16,7 +16,7 @@ poseNet.on('pose', gotPoses);
 }
 function draw(){
     image(video, 0, 0, 400, 400);
-    image(face, noseX-10, noseY-10, 25, 25);
+        image(face, noseX-45, noseY-30, 100, 100);
 }
 function modelLoaded(){
     console.log("model ready and set up");
@@ -31,8 +31,11 @@ function gotPoses(results){
 }    
 }
 function make_mustache(){
-face="https://www.freeiconspng.com/thumbs/mustache-png/mustache-png-d-by-anlli3-on-deviantart-2.png";
+    face="https://i.postimg.cc/PLhwHhxS/Mustache.png";
+    image(face, noseX-45, noseY-30, 100, 100);
+
 }
 function add_lipstick(){
-    face="http://assets.stickpng.com/images/584c61d3269a83097a7d04c9.png";
+    face="https://i.postimg.cc/TKnDBhRy/lips.png"; 
+    image(face, noseX-45, noseY-20, 100, 100);
 }
