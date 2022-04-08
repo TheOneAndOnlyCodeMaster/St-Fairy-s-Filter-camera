@@ -1,7 +1,7 @@
 noseX=0;
 noseY=0;
 function preload(){
-face=loadImage('https://i.postimg.cc/PLhwHhxS/Mustache.png');
+face=loadImage('https://i.postimg.cc/3x3QzSGq/m.png');
 }
 function setup(){
 canvas= createCanvas(300, 300);
@@ -16,7 +16,7 @@ poseNet.on('pose', gotPoses);
 }
 function draw(){
     image(video, 0, 0, 400, 400);
-        image(face, noseX-45, noseY-30, 100, 100);
+        image(face, noseX-33, noseY-18, 70, 60);
 }
 function modelLoaded(){
     console.log("model ready and set up");
@@ -31,11 +31,12 @@ function gotPoses(results){
 }    
 }
 function make_mustache(){
-    face="https://i.postimg.cc/PLhwHhxS/Mustache.png";
+    face="https://i.postimg.cc/3x3QzSGq/m.png";
     image(face, noseX-45, noseY-30, 100, 100);
+    console.log("Mustache Made");
 
 }
 function add_lipstick(){
-    face="https://i.postimg.cc/TKnDBhRy/lips.png"; 
-    image(face, noseX-45, noseY-20, 100, 100);
+    face="https://i.postimg.cc/PxFvYgkv/l1.png"; 
+    console.log("Lips Ready");
 }
